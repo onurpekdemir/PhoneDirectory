@@ -7,7 +7,6 @@ D:\Projects\PhoneDirectory\PD.Service.Report\bin\Debug\netcoreapp3.1\PD.Service.
 D:\Projects\PhoneDirectory\PD.Service.Report\bin\Debug\netcoreapp3.1\PD.Service.Report.runtimeconfig.dev.json
 D:\Projects\PhoneDirectory\PD.Service.Report\bin\Debug\netcoreapp3.1\PD.Service.Report.dll
 D:\Projects\PhoneDirectory\PD.Service.Report\bin\Debug\netcoreapp3.1\PD.Service.Report.pdb
-D:\Projects\PhoneDirectory\PD.Service.Report\obj\Debug\netcoreapp3.1\PD.Service.Report.csprojAssemblyReference.cache
 D:\Projects\PhoneDirectory\PD.Service.Report\obj\Debug\netcoreapp3.1\PD.Service.Report.AssemblyInfoInputs.cache
 D:\Projects\PhoneDirectory\PD.Service.Report\obj\Debug\netcoreapp3.1\PD.Service.Report.AssemblyInfo.cs
 D:\Projects\PhoneDirectory\PD.Service.Report\obj\Debug\netcoreapp3.1\PD.Service.Report.csproj.CoreCompileInputs.cache

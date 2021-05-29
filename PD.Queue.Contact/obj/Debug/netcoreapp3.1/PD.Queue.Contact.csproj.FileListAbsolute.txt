@@ -1,0 +1,13 @@
+D:\Projects\PhoneDirectory\PD.Queue.Contact\bin\Debug\netcoreapp3.1\PD.Queue.Contact.exe
+D:\Projects\PhoneDirectory\PD.Queue.Contact\bin\Debug\netcoreapp3.1\PD.Queue.Contact.deps.json
+D:\Projects\PhoneDirectory\PD.Queue.Contact\bin\Debug\netcoreapp3.1\PD.Queue.Contact.runtimeconfig.json
+D:\Projects\PhoneDirectory\PD.Queue.Contact\bin\Debug\netcoreapp3.1\PD.Queue.Contact.runtimeconfig.dev.json
+D:\Projects\PhoneDirectory\PD.Queue.Contact\bin\Debug\netcoreapp3.1\PD.Queue.Contact.dll
+D:\Projects\PhoneDirectory\PD.Queue.Contact\bin\Debug\netcoreapp3.1\PD.Queue.Contact.pdb
+D:\Projects\PhoneDirectory\PD.Queue.Contact\obj\Debug\netcoreapp3.1\PD.Queue.Contact.csprojAssemblyReference.cache
+D:\Projects\PhoneDirectory\PD.Queue.Contact\obj\Debug\netcoreapp3.1\PD.Queue.Contact.AssemblyInfoInputs.cache
+D:\Projects\PhoneDirectory\PD.Queue.Contact\obj\Debug\netcoreapp3.1\PD.Queue.Contact.AssemblyInfo.cs
+D:\Projects\PhoneDirectory\PD.Queue.Contact\obj\Debug\netcoreapp3.1\PD.Queue.Contact.csproj.CoreCompileInputs.cache
+D:\Projects\PhoneDirectory\PD.Queue.Contact\obj\Debug\netcoreapp3.1\PD.Queue.Contact.dll
+D:\Projects\PhoneDirectory\PD.Queue.Contact\obj\Debug\netcoreapp3.1\PD.Queue.Contact.pdb
+D:\Projects\PhoneDirectory\PD.Queue.Contact\obj\Debug\netcoreapp3.1\PD.Queue.Contact.genruntimeconfig.cache

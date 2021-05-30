@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PD.Service.Contact.UOW
+namespace PD.Service.Contact.DomainModels
 {
-    public interface IUnitOfWork
+    public interface IDomainModelBase
     {
-        int Save();
     }
 }

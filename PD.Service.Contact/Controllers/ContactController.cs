@@ -1,55 +1,47 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using PD.Service.Contact.DomainModels.Contact;
+using PD.Service.Contact.Services;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using PD.Service.Contact.Repositories;
-using PD.Service.Contact.UOW;
 
 namespace PD.Service.Contact.Controllers
 {
     [Route("api/[controller]")]
     public class ContactController : ControllerBase
     {
-        private readonly IContactRepository _contactRepository;
-        private readonly IUnitOfWork _unitOfWork;
-        public ContactController(IContactRepository contactRepository, IUnitOfWork unitOfWork)
+        private readonly IContactService _contactService;
+        public ContactController(IContactService contactService)
         {
-            _unitOfWork = unitOfWork;
-            _contactRepository = contactRepository;
+            _contactService = contactService;
         }
 
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<ContactQueryDomainModel> List()
         {
-            return new string[] { "value1", "value2" };
+            return _contactService.List();
         }
 
-        // GET api/<ValuesController1>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ContactQueryDomainModel GetContact(int id)
         {
-            //var s = _contactRepository.Get(id);
-            return "value";
+            return _contactService.Get(id);
         }
 
-        // POST api/<ValuesController1>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void InsertContact([FromBody] ContactCreateDomainModel model)
         {
+            _contactService.Insert(model);
         }
 
-        // PUT api/<ValuesController1>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut]
+        public void UpdateContact([FromBody] ContactUpdateDomainModel model)
         {
+            _contactService.Update(model);
         }
 
-        // DELETE api/<ValuesController1>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void DeleteContact(int id)
         {
+            _contactService.Delete(id);
         }
     }
 }

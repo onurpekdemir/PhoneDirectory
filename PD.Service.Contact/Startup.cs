@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,6 +13,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using PD.Service.Contact.Data;
+using PD.Service.Contact.Extensions;
+using PD.Service.Contact.Profiles;
 using PD.Service.Contact.Repositories;
 using PD.Service.Contact.UOW;
 
@@ -32,9 +35,11 @@ namespace PD.Service.Contact
             services.AddDbContext<ContactContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddTransient<IContactRepository, ContactRepository>();
-            services.AddTransient<IContactInfoRepository, ContactInfoRepository>();
-            services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddRepositories();
+           
+            services.AddAutoMapper();
+
+            services.AddServices();
 
             services.AddControllers();
         }

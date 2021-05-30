@@ -15,9 +15,9 @@ namespace PD.Service.Contact.UOW
             _contactContext = contactContext;
         }
 
-        public void Save()
+        public int Save()
         {
-            _contactContext.SaveChanges();
+            return _contactContext.SaveChanges();
         }
     }
 }

@@ -12,6 +12,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using PD.Service.Contact.Data;
+using PD.Service.Contact.Repositories;
+using PD.Service.Contact.UOW;
 
 namespace PD.Service.Contact
 {
@@ -29,6 +31,10 @@ namespace PD.Service.Contact
         {
             services.AddDbContext<ContactContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddTransient<IContactRepository, ContactRepository>();
+            services.AddTransient<IContactInfoRepository, ContactInfoRepository>();
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
 
             services.AddControllers();
         }

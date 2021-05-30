@@ -27,7 +27,7 @@ namespace PD.Service.Contact.Data
                         new Models.ContactInfo { ContactInfoType = Models.ContactInfoType.EmailAddress,ContactInfoContent = "onurpekdemir@obss.com.tr" },
                         new Models.ContactInfo { ContactInfoType = Models.ContactInfoType.Location,ContactInfoContent = "Ankara" },
                         new Models.ContactInfo { ContactInfoType = Models.ContactInfoType.Location,ContactInfoContent = "İstanbul" },
-                        new Models.ContactInfo { ContactInfoType = Models.ContactInfoType.PhoneNumber,ContactInfoContent = "+901111111" }
+                        new Models.ContactInfo { ContactInfoType = Models.ContactInfoType.PhoneNumber,ContactInfoContent = "+901111111111" }
                     }
                 },
 
@@ -39,7 +39,7 @@ namespace PD.Service.Contact.Data
                     ContactInfos = new List<Models.ContactInfo>{
                         new Models.ContactInfo { ContactInfoType = Models.ContactInfoType.EmailAddress,ContactInfoContent = "orhangecen@obss.com.tr" },
                         new Models.ContactInfo { ContactInfoType = Models.ContactInfoType.Location,ContactInfoContent = "Ankara" },
-                        new Models.ContactInfo { ContactInfoType = Models.ContactInfoType.PhoneNumber,ContactInfoContent = "+902222222" }
+                        new Models.ContactInfo { ContactInfoType = Models.ContactInfoType.PhoneNumber,ContactInfoContent = "+902222222222" }
                     }
                 },
 
@@ -49,7 +49,7 @@ namespace PD.Service.Contact.Data
                     LastName="ULUS",
                     Firm = "OBSS",
                     ContactInfos = new List<Models.ContactInfo>{
-                        new Models.ContactInfo { ContactInfoType = Models.ContactInfoType.PhoneNumber,ContactInfoContent = "+901111111" }
+                        new Models.ContactInfo { ContactInfoType = Models.ContactInfoType.PhoneNumber,ContactInfoContent = "+903333333333" }
                     }
                 },
 
@@ -61,7 +61,7 @@ namespace PD.Service.Contact.Data
                     ContactInfos = new List<Models.ContactInfo>{
                         new Models.ContactInfo { ContactInfoType = Models.ContactInfoType.EmailAddress,ContactInfoContent = "muratunluoney@buybase.com" },
                         new Models.ContactInfo { ContactInfoType = Models.ContactInfoType.Location,ContactInfoContent = "İstanbul" },
-                        new Models.ContactInfo { ContactInfoType = Models.ContactInfoType.PhoneNumber,ContactInfoContent = "+901111111" }
+                        new Models.ContactInfo { ContactInfoType = Models.ContactInfoType.PhoneNumber,ContactInfoContent = "+904444444444" }
                     }
                 },
 

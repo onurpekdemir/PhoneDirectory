@@ -1,8 +1,30 @@
 {
   "version": 2,
-  "dgSpecHash": "vAQVFgaBI+bu6HjZzovysvibQ/ny7SQ3Kd8vmGx6hu9b8wKwEcwLG+gvZhwK9/IunglTyVwCsj06m2fjRn9ijg==",
+  "dgSpecHash": "en906KlHVyNLVlhlahQHvFnjP0deM3Vcgo+nbOL4FXTngNMOsBzVb5jKLzpAHnWpE0/Rm/AOj1rlHiER4EthVw==",
   "success": true,
   "projectFilePath": "D:\\Projects\\PhoneDirectory\\PD.Client.Web\\PD.Client.Web.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Onur\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.15\\microsoft.aspnetcore.jsonpatch.3.1.15.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.15\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.15.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\3.1.15\\microsoft.aspnetcore.mvc.razor.extensions.3.1.15.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\3.1.15\\microsoft.aspnetcore.mvc.razor.runtimecompilation.3.1.15.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.15\\microsoft.aspnetcore.razor.language.3.1.15.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\2.9.3\\microsoft.codeanalysis.analyzers.2.9.3.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\microsoft.codeanalysis.common\\3.3.0\\microsoft.codeanalysis.common.3.3.0.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.3.0\\microsoft.codeanalysis.csharp.3.3.0.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\microsoft.codeanalysis.razor\\3.1.15\\microsoft.codeanalysis.razor.3.1.15.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\microsoft.extensions.dependencymodel\\3.1.6\\microsoft.extensions.dependencymodel.3.1.6.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.3\\system.threading.tasks.extensions.4.5.3.nupkg.sha512"
+  ],
   "logs": []
 }

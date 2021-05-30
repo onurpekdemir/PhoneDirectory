@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PD.Client.Web.Utils;
 
 namespace PD.Client.Web
 {
@@ -23,7 +24,11 @@ namespace PD.Client.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.Configure<RestfulApiOptions>(Configuration.GetSection("ApiSettings:Gateway"));
+
+            services.AddScoped<IRestfulApiClient,RestfulApiClient>();
+
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

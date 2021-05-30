@@ -6,24 +6,29 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PD.Client.Web.Models;
+using PD.Client.Web.Utils;
 
 namespace PD.Client.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IRestfulApiClient _apiClient;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IRestfulApiClient apiClient)
         {
-            _logger = logger;
+            _apiClient = apiClient;
         }
 
         public IActionResult Index()
         {
+
+
+
+            var s = _apiClient.Get<string>("api/home/1").Result;
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Report()
         {
             return View();
         }

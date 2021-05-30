@@ -55,7 +55,7 @@ namespace PD.Client.Web
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=contact}/{action=Index}/{id?}");
             });
         }
     }

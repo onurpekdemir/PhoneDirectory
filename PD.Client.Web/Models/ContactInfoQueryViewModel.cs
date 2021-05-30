@@ -1,12 +1,11 @@
-﻿using PD.Service.Contact.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PD.Service.Contact.DomainModels.ContactInfo
+namespace PD.Client.Web.Models
 {
-    public class ContactInfoQueryDomainModel
+    public class ContactInfoQueryViewModel
     {
         public int ID { get; set; }
         public string ContactInfoType { get; set; }

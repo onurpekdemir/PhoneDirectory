@@ -356,3 +356,6 @@ D:\Projects\PhoneDirectory\PD.Client.Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json
 D:\Projects\PhoneDirectory\PD.Client.Web\obj\Debug\netcoreapp3.1\PD.Client.Web.csproj.CoreCompileInputs.cache
 D:\Projects\PhoneDirectory\PD.Client.Web\obj\Debug\netcoreapp3.1\PD.Client.Web.MvcApplicationPartsAssemblyInfo.cs
 D:\Projects\PhoneDirectory\PD.Client.Web\obj\Debug\netcoreapp3.1\PD.Client.Web.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\PhoneDirectory\PD.Client.Web\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Add.cshtml.g.cs
+D:\Projects\PhoneDirectory\PD.Client.Web\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
+D:\Projects\PhoneDirectory\PD.Client.Web\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Update.cshtml.g.cs

@@ -19,12 +19,12 @@ namespace PD.Client.Web.Controllers
             _apiClient = apiClient;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
 
+         
 
-
-            var s = _apiClient.Get<string>("api/home/1").Result;
+          //  var s = await _apiClient.Get<string>("api/contact");
             return View();
         }
 

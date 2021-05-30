@@ -20,10 +20,20 @@ namespace PD.Service.Contact.Controllers
             return _contactService.List();
         }
 
-        [HttpGet("{id}")]
+        [HttpGet]
+        [Route("{id}")]
         public ContactQueryDomainModel GetContact(int id)
         {
             return _contactService.Get(id);
+        }
+
+        [HttpGet("{id}/details")]
+        public ContactQueryDomainModel GetContactWithInfo(int id)
+        {
+            var s=  _contactService.GetWithContactInfo(id);
+
+            return s;
+
         }
 
         [HttpPost]

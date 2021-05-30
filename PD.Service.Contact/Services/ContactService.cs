@@ -33,6 +33,12 @@ namespace PD.Service.Contact.Services
             return _mapper.Map<ContactQueryDomainModel>(contact);
         }
 
+        public ContactQueryDomainModel GetWithContactInfo(int id)
+        {
+            var contact = _contactRepository.GetWithContactInfo(id);
+            return _mapper.Map<ContactQueryDomainModel>(contact);
+        }
+
         public int Insert(ContactCreateDomainModel model)
         {
             var entity = _mapper.Map<Models.Contact>(model);

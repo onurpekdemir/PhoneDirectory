@@ -9,6 +9,7 @@ namespace PD.Service.Contact.Services
     public interface IContactService
     {
         ContactQueryDomainModel Get(int id);
+        ContactQueryDomainModel GetWithContactInfo(int id);
         IList<ContactQueryDomainModel> List();
         int Insert(ContactCreateDomainModel entity);
         int Update(ContactUpdateDomainModel entity);

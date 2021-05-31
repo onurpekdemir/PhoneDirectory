@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yBjnVQ+v5BFr3qhNPvK/usloYUmBdvIjUAR9w2m/uhQMUw5vJwtSXjPaUZzuG/sULKQCMt4ot6vNQQQ8SiFxLQ==",
+  "dgSpecHash": "fSqsX/uLDOmH/UCvec6slpa08qeDdUVzvYHTFRgY9xHExCM3FpetF/P+oo07WsWLXD0ynkiP6kSbDvl4KAaGDQ==",
   "success": true,
   "projectFilePath": "D:\\Projects\\PhoneDirectory\\PD.Api.Gateway\\PD.Api.Gateway.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,10 @@
     "C:\\Users\\Onur\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.15\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.15.nupkg.sha512",
     "C:\\Users\\Onur\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Onur\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
-    "C:\\Users\\Onur\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+    "C:\\Users\\Onur\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }

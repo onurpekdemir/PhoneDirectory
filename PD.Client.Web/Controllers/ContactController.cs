@@ -32,7 +32,7 @@ namespace PD.Client.Web.Controllers
         public async Task<IActionResult> Add(ContactCreateViewModel model)
         {
             await _apiClient.Post<ContactCreateViewModel>("api/contact", model);
-            return View();
+            return RedirectToAction("Add");
         }
 
         public async Task<IActionResult> Update(int id)

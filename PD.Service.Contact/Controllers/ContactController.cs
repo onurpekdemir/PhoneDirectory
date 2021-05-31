@@ -2,6 +2,7 @@
 using PD.Service.Contact.DomainModels.Contact;
 using PD.Service.Contact.Services;
 using System.Collections.Generic;
+using System.Text.Json;
 
 namespace PD.Service.Contact.Controllers
 {
@@ -37,8 +38,10 @@ namespace PD.Service.Contact.Controllers
         }
 
         [HttpPost]
-        public void InsertContact([FromBody] ContactCreateDomainModel model)
+        public void InsertContact([FromBody] object content)
         {
+            string contentString = JsonSerializer.Serialize(content);
+            var model = JsonSerializer.Deserialize<ContactCreateDomainModel>(contentString);
             _contactService.Insert(model);
         }
 

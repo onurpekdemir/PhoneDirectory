@@ -7,6 +7,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using RabbitMQ.Client;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -53,16 +54,17 @@ namespace PD.Api.Gateway.Controllers
             }
         }
 
-        // POST api/<HomeController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] object content)
         {
+            string contentString = JsonSerializer.Serialize(content);
+            Publish(contentString);
         }
 
         
         public async Task<IActionResult> Put([FromBody] object content)
         {
-           var contentString =  JsonSerializer.Serialize(content);
+           string contentString =  JsonSerializer.Serialize(content);
             return null;
         }
 
@@ -70,6 +72,31 @@ namespace PD.Api.Gateway.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+        }
+
+        private void Publish(string contentString)
+        {
+            var factory = new ConnectionFactory() { HostName = "localhost" };
+            using (var connection = factory.CreateConnection())
+            using (var channel = connection.CreateModel())
+            {
+                channel.QueueDeclare(queue: "contact_queue",
+                                     durable: true,
+                                     exclusive: false,
+                                     autoDelete: false,
+                                     arguments: null);
+
+                var body = Encoding.UTF8.GetBytes(contentString);
+
+                var properties = channel.CreateBasicProperties();
+                properties.Persistent = true;
+
+                channel.BasicPublish(exchange: "",
+                                     routingKey: "contact_queue",
+                                     basicProperties: properties,
+                                     body: body);
+            }
+
         }
     }
 }

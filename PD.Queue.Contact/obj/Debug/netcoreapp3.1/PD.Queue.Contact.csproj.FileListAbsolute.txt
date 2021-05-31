@@ -7,7 +7,11 @@ D:\Projects\PhoneDirectory\PD.Queue.Contact\bin\Debug\netcoreapp3.1\PD.Queue.Con
 D:\Projects\PhoneDirectory\PD.Queue.Contact\obj\Debug\netcoreapp3.1\PD.Queue.Contact.csprojAssemblyReference.cache
 D:\Projects\PhoneDirectory\PD.Queue.Contact\obj\Debug\netcoreapp3.1\PD.Queue.Contact.AssemblyInfoInputs.cache
 D:\Projects\PhoneDirectory\PD.Queue.Contact\obj\Debug\netcoreapp3.1\PD.Queue.Contact.AssemblyInfo.cs
-D:\Projects\PhoneDirectory\PD.Queue.Contact\obj\Debug\netcoreapp3.1\PD.Queue.Contact.csproj.CoreCompileInputs.cache
 D:\Projects\PhoneDirectory\PD.Queue.Contact\obj\Debug\netcoreapp3.1\PD.Queue.Contact.dll
 D:\Projects\PhoneDirectory\PD.Queue.Contact\obj\Debug\netcoreapp3.1\PD.Queue.Contact.pdb
 D:\Projects\PhoneDirectory\PD.Queue.Contact\obj\Debug\netcoreapp3.1\PD.Queue.Contact.genruntimeconfig.cache
+D:\Projects\PhoneDirectory\PD.Queue.Contact\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+D:\Projects\PhoneDirectory\PD.Queue.Contact\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+D:\Projects\PhoneDirectory\PD.Queue.Contact\obj\Debug\netcoreapp3.1\PD.Queue.Contact.csproj.CopyComplete
+D:\Projects\PhoneDirectory\PD.Queue.Contact\obj\Debug\netcoreapp3.1\PD.Queue.Contact.csproj.CoreCompileInputs.cache
+D:\Projects\PhoneDirectory\PD.Queue.Contact\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

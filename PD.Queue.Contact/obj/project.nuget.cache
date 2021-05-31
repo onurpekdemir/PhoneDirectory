@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "V1v+i2CqmznjHfykXmD0ePo+3SZU/BXKeFWOAiFLeHKsvi0UPelYf2PWjRYUqoEjnK2+AwVFft6e90jQ8ITAkw==",
+  "dgSpecHash": "sRZU0tMi/GRkLT4KSUsImTRU3DJ0s/6sUU+AF2tAJ++46/ILEHrION1llBk6ofZJ9y9BmaQgQ7FMbmzdONzQlw==",
   "success": true,
   "projectFilePath": "D:\\Projects\\PhoneDirectory\\PD.Queue.Contact\\PD.Queue.Contact.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Onur\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Onur\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
   "logs": []
 }

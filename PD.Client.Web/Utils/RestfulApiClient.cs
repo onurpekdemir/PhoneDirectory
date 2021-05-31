@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 using Microsoft.Extensions.Options;
+using System.IO;
 
 namespace PD.Client.Web.Utils
 {
@@ -17,6 +18,7 @@ namespace PD.Client.Web.Utils
             apiUrl = options.CurrentValue.Url;
         }
 
+
         public async Task Post<T>(string url, T contentValue)
         {
             using (var client = new HttpClient())
@@ -28,12 +30,12 @@ namespace PD.Client.Web.Utils
             }
         }
 
-        public async Task Put<T>(string url, T stringValue)
+        public async Task Put<T>(string url, T model)
         {
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(apiUrl);
-                var content = new StringContent(JsonConvert.SerializeObject(stringValue), Encoding.UTF8, "application/json");
+                var content = new StringContent(JsonConvert.SerializeObject(model), Encoding.UTF8, "application/json");
                 var result = await client.PutAsync(url, content);
                 result.EnsureSuccessStatusCode();
             }
@@ -41,7 +43,7 @@ namespace PD.Client.Web.Utils
 
         public async Task<T> Get<T>(string url)
         {
-            using (var client = new HttpClient())
+            using (var client = new HttpClient()) 
             {
                 client.BaseAddress = new Uri(apiUrl);
                 var result = await client.GetAsync(url);

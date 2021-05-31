@@ -18,7 +18,7 @@ namespace PD.Client.Web.Controllers
 
         public async Task<IActionResult> Index()
         {
-             var contacts = await _apiClient.Get<List<ContactQueryViewModel>>("api/contact");
+            var contacts = await _apiClient.Get<List<ContactQueryViewModel>>("api/contact");
             return View(contacts);
         }
 
@@ -27,17 +27,18 @@ namespace PD.Client.Web.Controllers
         {
             return View();
         }
-        
+
         [HttpPost]
-        public async Task <IActionResult> Add(ContactCreateViewModel model)
+        public async Task<IActionResult> Add(ContactCreateViewModel model)
         {
-            await _apiClient.Post<ContactCreateViewModel>("api/contact",model);
+            await _apiClient.Post<ContactCreateViewModel>("api/contact", model);
             return View();
         }
 
-        public IActionResult Update()
+        public async Task<IActionResult> Update(int id)
         {
-            return View();
+            var contact = await _apiClient.Get<ContactUpdateViewModel>($"api/contact/{id}");
+            return View(contact);
         }
 
         [HttpPost]
@@ -49,8 +50,14 @@ namespace PD.Client.Web.Controllers
 
         public async Task<IActionResult> Delete(int id)
         {
-            await _apiClient.Delete("api/contact", id);
+            await _apiClient.Delete($"api/contact/{id}");
             return View();
+        }
+
+        public async Task<IActionResult> Details(int id)
+        {
+            var contacts = await _apiClient.Get<ContactQueryWithInfoViewModel>($"api/contact/{id}");
+            return View(contacts);
         }
     }
 }

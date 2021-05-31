@@ -7,7 +7,11 @@ namespace PD.Client.Web.Models
 {
     public class ContactQueryWithInfoViewModel
     {
-        public ContactQueryViewModel Contact { get; set; }
-        public List<ContactQueryWithInfoViewModel> ContactInfoList { get; set; }
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string LastName { get; set; }
+        public string Firm { get; set; }
+
+        public List<ContactInfoQueryViewModel> ContactInfoList { get; set; }
     }
 }

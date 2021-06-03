@@ -13,7 +13,7 @@ namespace PD.Service.Contact.Data
         }
 
         public DbSet<Models.Contact> Contacts { get; set; }
-        public DbSet<Models.ContactInfo> Enrollments { get; set; }
+        public DbSet<Models.ContactInfo> ContactInfos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -61,11 +61,22 @@ namespace PD.Api.Gateway.Controllers
             Publish(contentString);
         }
 
-        
+        [HttpPut]
         public async Task<IActionResult> Put([FromBody] object content)
         {
-           string contentString =  JsonSerializer.Serialize(content);
-            return null;
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(_contactServiceUrl);
+                string contentString = JsonSerializer.Serialize(content);
+                //dynamic model = JsonSerializer.Deserialize<dynamic>(contentString);
+               
+                var result = await client.PutAsync($"api/contact", 
+                    new StringContent(contentString, Encoding.UTF8, "application/json"));
+              
+                string resultContentString = await result.Content.ReadAsStringAsync();
+                result.EnsureSuccessStatusCode();
+                return Ok(resultContentString);
+            }
         }
 
         // DELETE api/<HomeController>/5

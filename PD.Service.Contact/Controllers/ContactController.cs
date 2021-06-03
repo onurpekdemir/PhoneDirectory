@@ -46,8 +46,10 @@ namespace PD.Service.Contact.Controllers
         }
 
         [HttpPut]
-        public void UpdateContact([FromBody] ContactUpdateDomainModel model)
+        public void UpdateContact([FromBody] object content)
         {
+            string contentString = JsonSerializer.Serialize(content);
+            var model = JsonSerializer.Deserialize<ContactUpdateDomainModel>(contentString);
             _contactService.Update(model);
         }
 

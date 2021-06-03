@@ -54,9 +54,15 @@ namespace PD.Service.Contact.Services
 
         public int Update(ContactUpdateDomainModel model)
         {
-            var entity = _mapper.Map<Models.Contact>(model);
-            _contactRepository.Insert(entity);
-            return _unitOfWork.Save();
+            var contact = _contactRepository.Get(model.ID);
+            if (contact != null)
+            {
+                var entity = _mapper.Map(model, contact);
+                _contactRepository.Update(entity);
+                return _unitOfWork.Save();
+            }
+
+            return -1;
         }
     }
 
